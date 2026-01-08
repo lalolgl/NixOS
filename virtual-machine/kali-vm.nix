@@ -1,4 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [ inputs.nixvirt.nixosModules.default ];
@@ -9,7 +15,9 @@
       name = "kali";
 
       # Hardware
-      cpu = { cores = 4; };
+      cpu = {
+        cores = 4;
+      };
       memory = 6144;
       disks = [
         {
@@ -23,14 +31,14 @@
       # ISO
       boot.devices = [ "cdrom" ];
       cdrom = {
-              file = "/home/aog/Documents/ISO/kali-linux-2025.4-installer-amd64.iso";
-            };
+        file = "/home/aog/Documents/ISO/kali-linux-2025.4-installer-amd64.iso";
+      };
 
       # USB Wi-Fi
       usb = [
         {
-        vendor = "148f";    # Ralink Technology
-        product = "7601";   # MT7601U Wireless Adapter
+          vendor = "148f"; # Ralink Technology
+          product = "7601"; # MT7601U Wireless Adapter
         }
       ];
 
