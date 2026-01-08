@@ -22,6 +22,7 @@
     tun2proxy
 
     # Security
+    libfprint-2-tod1-goodix
     #opensnitch
     #opensnitch-ui
     #clamav
