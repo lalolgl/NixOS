@@ -154,6 +154,7 @@
     #gnomeExtensions.spotify-tray
     gnomeExtensions.bluetooth-battery
     gnomeExtensions.bluetooth-quick-connect
+    gnomeExtensions.battery-health-charging
     gnomeExtensions.battery-time-3
     gnomeExtensions.vitals
     gnomeExtensions.weather-oclock
