@@ -81,6 +81,7 @@
        #figma-linux
        #android-studio
        gnome-frog
+       nil
        #nodejs
        #python3
        #python3Packages.pip
