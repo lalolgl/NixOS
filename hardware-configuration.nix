@@ -1,23 +1,33 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "ahci" "usbhid" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" = {
-     device = "/dev/disk/by-label/nixos";
-     fsType = "ext4";
+  # LUKS root
+  boot.initrd.luks.devices = {
+    root = {
+      device = "/dev/disk/by-uuid/45f29360-86e1-4fff-9d13-e7060c3819c4";
+      preLVM = true;
+    };
   };
 
+  # Root filesystem (inside LUKS)
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/ecf90a91-3263-4323-a54a-2d0e60eb253e";
+    fsType = "ext4";
+  };
+
+  # EFI boot
   fileSystems."/boot" = {
-     device = "/dev/disk/by-label/ESP";
-     fsType = "vfat";
+    device = "/dev/disk/by-uuid/4782-1090";
+    fsType = "vfat";
   };
 
   swapDevices = [ ];
