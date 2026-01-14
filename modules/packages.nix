@@ -22,7 +22,6 @@
     tun2proxy
 
     # Security
-    libfprint-2-tod1-goodix
     #opensnitch
     #opensnitch-ui
     #clamav
@@ -80,13 +79,18 @@
 
     # Virtualisation
 
+    # Office
+    onlyoffice-desktopeditors
+    typst
+    gnome-frog
+
     # Development
     git
     zed-editor
     vscode
     #figma-linux
     #android-studio
-    gnome-frog
+
     nil
     nixd
     #nodejs
@@ -121,7 +125,7 @@
     keepassxc
     remmina
     qbittorrent
-    onlyoffice-desktopeditors
+
     obsidian
     krita
     obs-studio
@@ -155,7 +159,6 @@
     #gnomeExtensions.spotify-tray
     gnomeExtensions.bluetooth-battery
     gnomeExtensions.bluetooth-quick-connect
-    gnomeExtensions.battery-health-charging
     gnomeExtensions.battery-time-3
     gnomeExtensions.vitals
     gnomeExtensions.weather-oclock
