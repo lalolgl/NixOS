@@ -57,6 +57,7 @@
 
     # Launchers
     #heroic-unwrapped
+    #hydralauncher
     (pkgs.bottles.override {
       removeWarningPopup = true;
     })
@@ -68,6 +69,7 @@
     # Wine
     wine64
     winetricks
+    protontricks
 
     # Messenger
     signal-desktop
@@ -86,16 +88,19 @@
 
     # Development
     git
+    github-desktop
     zed-editor
     vscode
     #figma-linux
     #android-studio
-
-    nil
-    nixd
+    #nil
+    #nixd
     #nodejs
     #python3
     #python3Packages.pip
+
+    # Containers
+    dtop
 
     # CLI
     cmatrix
@@ -125,7 +130,6 @@
     keepassxc
     remmina
     qbittorrent
-
     obsidian
     krita
     obs-studio
@@ -173,5 +177,4 @@
   programs.gamemode.enable = true;
   programs.nix-ld.enable = true;
   fonts.fontconfig.enable = true;
-
 }
