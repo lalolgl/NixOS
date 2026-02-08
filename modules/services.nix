@@ -1,8 +1,13 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   # Gaming mice interface
-    services.ratbagd.enable = true;
+  services.ratbagd.enable = true;
 
   # OpenRGB
   #services.hardware.openrgb.enable = true;
