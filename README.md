@@ -1,1 +1,2 @@
-# NixOS
+# ❄️ My NixOS config
+---
