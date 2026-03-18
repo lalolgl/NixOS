@@ -33,7 +33,7 @@
     eartag
 
     # Pipewire utils
-    helvum
+    crosspipe
     easyeffects
 
     # Browsers
