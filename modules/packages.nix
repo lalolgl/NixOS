@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}:
+{ config, pkgs, lib,  ...}:
 
 {
   # Allow the installation of unknown apps
@@ -13,7 +8,6 @@
 
   environment.systemPackages = with pkgs; [
     # Info system
-    neofetch
     fastfetch
     resources
 
@@ -79,8 +73,6 @@
     upscayl
     ollama-cuda
 
-    # Virtualisation
-
     # Office
     onlyoffice-desktopeditors
     typst
@@ -138,12 +130,14 @@
     vlc
     mpv
     rquickshare
+    alacritty
 
     # Constraints
     cudaPackages.cudatoolkit
     #mbedtls
     usbutils
     #bluez
+    kitty # GPU based terminal emulator
 
     # Gnome Extensions
     gnome-tweaks
@@ -156,6 +150,8 @@
     gnomeExtensions.dash-to-dock
     gnomeExtensions.dash2dock-lite
     gnomeExtensions.logo-menu
+    gnomeExtensions.top-bar-organizer
+    gnomeExtensions.ollama-indicator
     #Other
     gnomeExtensions.gsconnect
     gnomeExtensions.do-not-disturb-while-screen-sharing-or-recording
@@ -166,10 +162,16 @@
     gnomeExtensions.bluetooth-quick-connect
     gnomeExtensions.battery-time-3
     gnomeExtensions.vitals
+    #gnomeExtensions.wifi-signal-plus
     gnomeExtensions.weather-oclock
     gnomeExtensions.wallpaper-slideshow
     gnomeExtensions.easyeffects-preset-selector
     gnomeExtensions.gamemode-shell-extension
+
+    # Style
+    fuzzel # Wayland-native application launcher
+    waybar #
+    mako # Lightweight Wayland notification daemon
   ];
 
   # Activation apps
