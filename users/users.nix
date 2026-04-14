@@ -5,7 +5,7 @@
   users.users.aog = {
     isNormalUser = true;
     description = "aog";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "docker" ];
     packages = with pkgs; [
     ];
   };
