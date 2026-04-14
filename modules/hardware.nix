@@ -18,7 +18,7 @@
     "nvidia_uvm"
 
     "kvm-amd"
-    "virtio"         # drivers for паравиртуализации
+    "virtio"         # drivers
     "virtio-net"     # ethernet support
     "virtio-blk"     # unit devices
     "virtio-balloon" # cotrol memory
@@ -27,6 +27,19 @@
 
   # Virtualisation
   virtualisation.libvirtd.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    storageDriver = "overlay2";
+
+    daemon.settings = {
+      default-address-pools = [
+        {
+          base = "10.200.0.0/16";
+          size = 24;
+        }
+      ];
+    };
+  };
 
   # Enable touchpad support
   services.libinput.enable = true;
