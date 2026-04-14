@@ -72,6 +72,7 @@
     # AI
     upscayl
     ollama-cuda
+    #openclaw
 
     # Office
     onlyoffice-desktopeditors
@@ -82,7 +83,7 @@
     git
     github-desktop
     zed-editor
-    vscode
+    #vscode
     #figma-linux
     #android-studio
     #nil
@@ -93,6 +94,7 @@
 
     # Containers
     dtop
+    docker
 
     # CLI
     cmatrix
@@ -109,8 +111,10 @@
     ffmpeg
     #ventoy
     nmap
+    whosthere
     #john
     #aircrack-ng
+    llmfit
 
     # Themes
     adwaita-qt
@@ -131,6 +135,7 @@
     mpv
     rquickshare
     alacritty
+    syncthing
 
     # Constraints
     cudaPackages.cudatoolkit
