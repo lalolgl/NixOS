@@ -21,7 +21,7 @@
               # 384000
               # 768000
             ];
-            "default.clock.rate" = 96000;
+            "default.clock.rate" = 48000;
             "settings.check-rate" = true;
           };
         };
