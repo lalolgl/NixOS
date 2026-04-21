@@ -35,6 +35,8 @@
     # Pipewire utils
     crosspipe
     easyeffects
+    lsp-plugins
+    calf
 
     # Browsers
     #vivaldi
@@ -83,6 +85,7 @@
     git
     github-desktop
     zed-editor
+    neovim
     #vscode
     #figma-linux
     #android-studio
@@ -170,7 +173,7 @@
     #gnomeExtensions.wifi-signal-plus
     gnomeExtensions.weather-oclock
     gnomeExtensions.wallpaper-slideshow
-    gnomeExtensions.easyeffects-preset-selector
+    #gnomeExtensions.easyeffects-preset-selector
     gnomeExtensions.gamemode-shell-extension
 
     # Style
