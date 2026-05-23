@@ -18,6 +18,7 @@
     # Security
     #opensnitch
     #opensnitch-ui
+    wireshark-cli
     #clamav
     #clamtk
     tor
@@ -164,7 +165,6 @@
     gnomeExtensions.gsconnect
     gnomeExtensions.do-not-disturb-while-screen-sharing-or-recording
     gnomeExtensions.clipboard-indicator
-    gnomeExtensions.spotify-tray
     gnomeExtensions.mute-spotify-ads
     gnomeExtensions.bluetooth-battery
     gnomeExtensions.bluetooth-quick-connect
