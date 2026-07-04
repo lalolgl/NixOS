@@ -14,6 +14,7 @@
     # VPN
     xray
     tun2proxy
+    v2ray
 
     # Security
     #opensnitch
@@ -76,6 +77,7 @@
     upscayl
     ollama-cuda
     #openclaw
+    opencode
 
     # Office
     onlyoffice-desktopeditors
