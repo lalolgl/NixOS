@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./programs/kitty.nix
+    ./programs/fish.nix
     ./programs/cava.nix
   ];
 

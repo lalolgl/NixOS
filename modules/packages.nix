@@ -121,6 +121,7 @@
     #john
     #aircrack-ng
     llmfit
+    fish
 
     # Themes
     adwaita-qt
@@ -190,4 +191,5 @@
   programs.gamemode.enable = true;
   programs.nix-ld.enable = true;
   fonts.fontconfig.enable = true;
+  programs.fish.enable = true;
 }

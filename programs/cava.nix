@@ -17,8 +17,8 @@
       };
 
       color = {
-        background = "#111111";
-        foreground = "#FF005C";
+        background = "'#111111'";
+        foreground = "'#FF005C'";
       };
     };
   };
