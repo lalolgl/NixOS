@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./programs/cava.nix
+  ];
+
   home.username = "aog";
   home.homeDirectory = "/home/aog";
 
