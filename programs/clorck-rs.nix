@@ -6,7 +6,7 @@
 
     settings = {
       general = {
-        color = "magenta";
+        color = "'#FF005C'";
         interval = 250;
         blink = true;
         bold = true;

@@ -5,7 +5,7 @@
     ./programs/kitty.nix
     ./programs/fish.nix
     ./programs/cava.nix
-    ./programs/kew.nix
+    #./programs/kew.nix
   ];
 
   home.username = "aog";
