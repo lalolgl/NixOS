@@ -88,14 +88,13 @@
     git
     github-desktop
     zed-editor
-    neovim
     #vscode
     #figma-linux
     #android-studio
     #nil
     #nixd
     #nodejs
-    #python3
+    python3
     #python3Packages.pip
 
     # Containers
@@ -121,7 +120,6 @@
     #john
     #aircrack-ng
     llmfit
-    fish
 
     # Themes
     adwaita-qt
@@ -191,5 +189,4 @@
   programs.gamemode.enable = true;
   programs.nix-ld.enable = true;
   fonts.fontconfig.enable = true;
-  programs.fish.enable = true;
 }

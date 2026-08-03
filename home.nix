@@ -13,7 +13,10 @@
 
   home.packages = with pkgs; [
     # CLI
+    neovim
+    fish
     clock-rs
+    anime4k
   ];
 
   programs.bash.enable = true;
