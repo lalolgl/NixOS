@@ -6,7 +6,7 @@
     package = pkgs.clipse;
     settings = {
       "allowDuplicates": false,
-      "historyFile": "clipboard_history.json",
+      "historyFile": ".clipboard_history.json",
       "maxHistory": 100,
       "deleteAfter": 0,
       "logFile": "clipse.log",
