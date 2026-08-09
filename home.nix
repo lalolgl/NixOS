@@ -16,6 +16,10 @@
     fish
     clock-rs
     anime4k
+
+    clipse # clipboard manager
+
+    maigret
   ];
 
   programs.bash.enable = true;
