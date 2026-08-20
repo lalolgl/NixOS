@@ -11,7 +11,14 @@
     };
 
     interactiveShellInit = ''
+      # Fish shell configuration
       set -g fish_greeting ""
+
+      # Generate sshm completion if not present
+      if type -q sshm
+        and not test -f ~/.config/fish/completions/sshm.fish
+        sshm --completion fish > ~/.config/fish/completions/sshm.fish
+      end
     '';
   };
 }

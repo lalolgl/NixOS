@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ inputs, config, pkgs, lib, ... }:
 
 {
   # Enable the X11 windowing system and set the default video drivers
@@ -41,11 +41,32 @@
     };
   };
 
+  # Disable power-profiles-daemon (GNOME)
+  services.power-profiles-daemon.enable = false;
+
+
+  # auto-cpufreq
+  programs.auto-cpufreq.enable = true;
+  programs.auto-cpufreq.settings = {
+    charger = {
+      governor = "performance";
+      turbo = "auto";
+    };
+    battery = {
+      governor = "powersave";
+      turbo = "auto";
+    };
+  };
+
   # Enable touchpad support
   services.libinput.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  # Based services asus
+  services.asusd.enable = true;
+  services.supergfxd.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;

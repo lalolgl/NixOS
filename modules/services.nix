@@ -17,4 +17,10 @@
     enable = true;
     package = pkgs.ollama-cuda;
   };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
 }

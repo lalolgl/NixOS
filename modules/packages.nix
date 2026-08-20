@@ -55,7 +55,7 @@
     cartridges
     osu-lazer-bin
     prismlauncher
-    moonlight-qt
+    #moonlight-qt
 
     # Launchers
     #heroic-unwrapped
@@ -67,6 +67,8 @@
     # Game opimisation
     gamescope
     gamemode
+    asusctl # Managing ASUS laptops
+    supergfxctl # GPU switching utility
 
     # Wine
     wine64
@@ -110,9 +112,6 @@
     cmatrix
     cava
     btop
-    wavemon
-    duf
-    fd
     #blobdrop
     yt-dlp
     speedtest-cli
@@ -122,8 +121,6 @@
     #ventoy
     nmap
     whosthere
-    #john
-    #aircrack-ng
     llmfit
     fish
 
@@ -144,8 +141,6 @@
     audacity
     vlc
     mpv
-    rquickshare
-    alacritty
     syncthing
 
     # Constraints
@@ -153,7 +148,16 @@
     #mbedtls
     usbutils
     #bluez
+    smbmap
+    curl
     kitty # GPU based terminal emulator
+    xwayland-satellite # Wayland X11 compatibility layer
+
+    #Waybar helpers
+    playerctl # Media player control
+    pavucontrol # PulseAudio volume control
+    networkmanagerapplet # NetworkManager applet
+    blueman # Bluetooth manager
 
     # Gnome Extensions
     gnome-tweaks
@@ -185,8 +189,19 @@
 
     # Style
     fuzzel # Wayland-native application launcher
-    waybar #
+    waybar # Wayland-native bar
+    ironbar # Wayland-native bar
     mako # Lightweight Wayland notification daemon
+    waytrogen # GUI wallpaper manager
+    swaybg # Wayland-native wallpaper manager
+    yazi # File manager for the terminal
+    broot # File manager for the terminal
+    newsboat # RSS feed reader
+    micro # Terminal text editor
+    rofi # Application launcher & menus
+
+    bibata-cursors # Material cursor theme
+    nerd-fonts.jetbrains-mono
   ];
 
   # Activation apps
