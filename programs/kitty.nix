@@ -9,6 +9,7 @@
       font_family = "JetBrainsMono Nerd Font";
       font_size = 14;
       shell = "${pkgs.fish}/bin/fish";
+      confirm_os_window_close = 0;
 
       # Background / foreground
       background = "#0D0D0D";

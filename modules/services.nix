@@ -12,6 +12,10 @@
   # OpenRGB
   #services.hardware.openrgb.enable = true;
 
+  #
+  services.gnome.gnome-keyring.enable = true;
+
+
   # Ollama
   services.ollama = {
     enable = true;

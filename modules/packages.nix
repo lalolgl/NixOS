@@ -17,8 +17,8 @@
 
     # VPN
     xray
-    tun2proxy
-    v2ray
+    #tun2proxy
+    #v2ray
 
     # Security
     #opensnitch
@@ -27,6 +27,7 @@
     #clamav
     #clamtk
     tor
+    libsecret
 
     # Mail
     #thunderbird
@@ -35,7 +36,7 @@
     spotify
     feishin
     amberol
-    termusic
+    #termusic
     eartag
 
     # Pipewire utils
@@ -52,9 +53,9 @@
 
     # Games
     steam
-    cartridges
+    #cartridges
     osu-lazer-bin
-    prismlauncher
+    #prismlauncher
     #moonlight-qt
 
     # Launchers
@@ -67,6 +68,7 @@
     # Game opimisation
     gamescope
     gamemode
+    mangohud # Overlay for game performance
     asusctl # Managing ASUS laptops
     supergfxctl # GPU switching utility
 
@@ -81,7 +83,7 @@
 
     # AI
     upscayl
-    ollama-cuda
+    ollama
     #openclaw
     opencode
 
@@ -92,7 +94,7 @@
 
     # Development
     git
-    github-desktop
+    #github-desktop
     zed-editor
     neovim
     #vscode
@@ -105,8 +107,8 @@
     #python3Packages.pip
 
     # Containers
-    dtop
-    docker
+    #dtop
+    #docker
 
     # CLI
     cmatrix
@@ -123,6 +125,10 @@
     whosthere
     llmfit
     fish
+    netwatch # Wi-Fi scanner
+    witr # Monitoring process
+    fzf #  finding files
+    bat #
 
     # Themes
     adwaita-qt
@@ -137,14 +143,14 @@
     obsidian
     krita
     obs-studio
-    blender
+    #blender
     audacity
     vlc
     mpv
-    syncthing
+    #syncthing
 
     # Constraints
-    cudaPackages.cudatoolkit
+    #cudaPackages.cudatoolkit
     #mbedtls
     usbutils
     #bluez
@@ -152,6 +158,7 @@
     curl
     kitty # GPU based terminal emulator
     xwayland-satellite # Wayland X11 compatibility layer
+    brightnessctl # Control device brightness
 
     #Waybar helpers
     playerctl # Media player control
@@ -160,37 +167,37 @@
     blueman # Bluetooth manager
 
     # Gnome Extensions
-    gnome-tweaks
-    gnomeExtensions.user-themes
-    gnomeExtensions.appindicator
-    #Style
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.just-perfection
-    gnomeExtensions.wiggle
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.dash2dock-lite
-    gnomeExtensions.logo-menu
-    gnomeExtensions.top-bar-organizer
-    gnomeExtensions.ollama-indicator
-    #Other
-    gnomeExtensions.gsconnect
-    gnomeExtensions.do-not-disturb-while-screen-sharing-or-recording
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.mute-spotify-ads
-    gnomeExtensions.bluetooth-battery
-    gnomeExtensions.bluetooth-quick-connect
-    gnomeExtensions.battery-time-3
-    gnomeExtensions.vitals
+    #gnome-tweaks
+    #gnomeExtensions.user-themes
+    #nomeExtensions.appindicator
+    # Style
+    #gnomeExtensions.blur-my-shell
+    #gnomeExtensions.just-perfection
+    #gnomeExtensions.wiggle
+    #gnomeExtensions.dash-to-dock
+    #gnomeExtensions.dash2dock-lite
+    #gnomeExtensions.logo-menu
+    #gnomeExtensions.top-bar-organizer
+    #gnomeExtensions.ollama-indicator
+    # Other
+    #gnomeExtensions.gsconnect
+    #gnomeExtensions.do-not-disturb-while-screen-sharing-or-recording
+    #gnomeExtensions.clipboard-indicator
+    #gnomeExtensions.mute-spotify-ads
+    #gnomeExtensions.bluetooth-battery
+    #gnomeExtensions.bluetooth-quick-connect
+    #gnomeExtensions.battery-time-3
+    #gnomeExtensions.vitals
     #gnomeExtensions.wifi-signal-plus
-    gnomeExtensions.weather-oclock
-    gnomeExtensions.wallpaper-slideshow
+    #gnomeExtensions.weather-oclock
+    #gnomeExtensions.wallpaper-slideshow
     #gnomeExtensions.easyeffects-preset-selector
-    gnomeExtensions.gamemode-shell-extension
+    #gnomeExtensions.gamemode-shell-extension
 
     # Style
     fuzzel # Wayland-native application launcher
     waybar # Wayland-native bar
-    ironbar # Wayland-native bar
+    # ironbar # Wayland-native bar
     mako # Lightweight Wayland notification daemon
     waytrogen # GUI wallpaper manager
     swaybg # Wayland-native wallpaper manager
@@ -199,8 +206,9 @@
     newsboat # RSS feed reader
     micro # Terminal text editor
     rofi # Application launcher & menus
+    eww # Widget system
+    gowall # material theme
 
-    bibata-cursors # Material cursor theme
     nerd-fonts.jetbrains-mono
   ];
 
@@ -211,4 +219,11 @@
   programs.nix-ld.enable = true;
   fonts.fontconfig.enable = true;
   programs.fish.enable = true;
+
+  security.wrappers.xray = {
+     source = "${pkgs.xray}/bin/xray";
+     owner = "root";
+     group = "root";
+     capabilities = "cap_net_admin+ep";
+   };
 }

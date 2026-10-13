@@ -6,6 +6,8 @@
     ./programs/fish.nix
     ./programs/cava.nix
     ./programs/clipse.nix
+    ./programs/fzf.nix
+    ./programs/bat.nix
   ];
 
   home.username = "aog";
@@ -19,15 +21,24 @@
     anime4k
 
     clipse # clipboard manager
+    wl-clipboard # Wayland clipboard utilities
+
     sshm # SSH manager
     duf # Disk usage
     fd # Find
+    fzf
+    bat
+    ripgrep
     wavemon # Network monitoring
     #jocalsend # Terminal client for Localsend
 
     maigret # OSINT scanner
+    maltego # OSINT scanner
     john # Password cracking
     aircrack-ng # WiFi cracking
+    airgeddon # Audit wireless networks
+    hashcat # Fast password cracker
+    tcpdump # Packet capture
     bbot # multipurpose scanner
   ];
 

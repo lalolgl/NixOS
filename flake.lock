@@ -1,12 +1,63 @@
 {
   "nodes": {
+    "auto-cpufreq": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791097055,
+        "narHash": "sha256-v84Yb4holDAe4QYC1+YjhwUYW9myPFlnjw5u9Aaflr4=",
+        "owner": "AdnanHodzic",
+        "repo": "auto-cpufreq",
+        "rev": "35d8015afc1bc2c4b30526828dddde4c53925976",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AdnanHodzic",
+        "repo": "auto-cpufreq",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1791642191,
+        "narHash": "sha256-0bK0A59rVUn1SRZzo4cNi4VSqAe7vR1gL2/MZl53Frw=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "c58f54c733a7894d84fa2fdff26cc12088c4b78c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1767767207,
-        "narHash": "sha256-Mj3d3PfwltLmukFal5i3fFt27L6NiKXdBezC1EBuZs4=",
+        "lastModified": 1790299684,
+        "narHash": "sha256-iK8TZqVFap2LJEfmSr4VcV5jZ1DWqEyJEh0QerRX6JE=",
+        "rev": "7d5589bbf421c7b6f4185371abe3c465b1b557e9",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1079252.7d5589bbf421/nixexprs.tar.zst"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1791594108,
+        "narHash": "sha256-XK4KceonkwD8LuMAt/vNrz982mXJM5jeHAxMwsUXXAQ=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "5912c1772a44e31bf1c63c0390b90501e5026886",
+        "rev": "6510408d147d8c5e6d76043e899e9251756f6a75",
         "type": "github"
       },
       "original": {
@@ -18,7 +69,9 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "auto-cpufreq": "auto-cpufreq",
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },

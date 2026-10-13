@@ -16,30 +16,7 @@
     "nvidia_drm"
     "nvidia_modeset"
     "nvidia_uvm"
-
-    "kvm-amd"
-    "virtio"         # drivers
-    "virtio-net"     # ethernet support
-    "virtio-blk"     # unit devices
-    "virtio-balloon" # cotrol memory
-    "virtio-console" # console
   ];
-
-  # Virtualisation
-  virtualisation.libvirtd.enable = true;
-  virtualisation.docker = {
-    enable = true;
-    storageDriver = "overlay2";
-
-    daemon.settings = {
-      default-address-pools = [
-        {
-          base = "10.200.0.0/16";
-          size = 24;
-        }
-      ];
-    };
-  };
 
   # Disable power-profiles-daemon (GNOME)
   services.power-profiles-daemon.enable = false;
